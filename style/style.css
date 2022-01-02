@@ -6,7 +6,6 @@ html{
 }
 
 body {
-    margin: 0;
     padding: 0;
     font-family: 'Libre Baskerville', serif;
     margin: 0 0 100px;
@@ -16,6 +15,7 @@ body {
     font-size: 36px;
     position: relative;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .title::before{
@@ -31,19 +31,32 @@ body {
 
 .col-3 {
     flex: 0 0 33.33333%;
-    padding: 3%;
 }
 
 .col-6 {
     flex: 0 0 66.66666%;
-    padding: 3%;
+}
+
+.p50 {
+    padding: 50px;
 }
 
 .text-center {
     text-align: center;
 }
 
+.page-name {
+    font-size: 35px;
+    text-align: center;
+}
 
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Header start */
 .header {
@@ -151,6 +164,7 @@ body {
     flex-direction: row;
     background-color: #000;
     color: #fff;
+    overflow: hidden;
 }
 
 .last-results-table {
@@ -185,12 +199,15 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 60px;
+    height: 100px;
     width: 100%;
-    padding: 20px 3%;
     background-color: #000;
     color: #636363;
     border-top: 1px solid #333333;
+}
+
+.footer-container {
+    padding: 25px;
 }
 
 .social-list {
@@ -207,3 +224,29 @@ footer {
 }
 
 /* Footer end */
+
+/* Comments start */
+
+.comment-item {
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.comment-list .comment-item:nth-child(2n){
+    background-color: #ececec;
+}
+
+.comment-date{
+    float: left;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.comment-name {
+    float: right;
+    margin-top: 10px;
+}
