@@ -249,4 +249,39 @@ footer {
 .comment-name {
     float: right;
     margin-top: 10px;
+    font-weight: bold;
 }
+
+
+
+.input-name{
+    width: 100%;
+    padding: 10px;
+}
+
+.input-comment {
+    width: 100%; 
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    background-color: #05ccc9;
+    transition-duration: 0.5s;
+  }
+
+  .btn:hover {
+    color: white;
+    background-color: #019b98;
+  }
+
+  .mb20 {
+    margin-bottom: 20px;
+  }
+
+  .mt40{
+      margin-top: 40px;
+  }
