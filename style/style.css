@@ -6,8 +6,9 @@ body {
 .header {
     width: 100%;
     background-color: #000;
-    display: inline-block;
-    border-left: 5px solid #0ca597;
+    display: inline-flex;
+    border-bottom: 5px solid #0ca597;
+    justify-content: space-between;
 }
 
 .top-menu {
@@ -57,3 +58,28 @@ body {
 .logo img {
     height:100%;
 }
+
+/* Slideshow start*/
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow .image-container {
+    background: url(../images/lewis.jpeg) no-repeat scroll center center;
+    height: 750px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slideshow .image-title {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Slideshow end*/
