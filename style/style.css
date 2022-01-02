@@ -6,6 +6,37 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+.title {
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.title::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 4px;
+    background: #05ccc9;
+}
+
+.col-3 {
+    flex: 0 0 33.33333%;
+    padding: 3%;
+}
+
+.col-6 {
+    flex: 0 0 66.66666%;
+    padding: 3%;
+}
+
+.text-center {
+    text-align: center;
+}
+/* Header start */
 .header {
     position: fixed;
     z-index: 999;
@@ -65,24 +96,9 @@ body {
     height:100%;
 }
 
-.title {
-    font-size: 36px;
-    position: relative;
-    padding-bottom: 10px;
-}
+/* Header end */
 
-.title::before{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 160px;
-    height: 4px;
-    background: #05ccc9;
-}
-
-/* Slideshow start*/
+/* Slideshow start */
 
 .slideshow {
     position: relative;
@@ -106,9 +122,10 @@ body {
     font-weight: bold;
 }
 
-/* Slideshow end*/
+/* Slideshow end */
 
-/* About start*/
+/* About start */
+
 .about {
     display: flex;
     flex-direction: row;
@@ -116,21 +133,9 @@ body {
     margin: 20px 10%;
 }
 
-.col-3 {
-    flex: 0 0 33.33333%;
-    padding: 3%;
-}
+/* About end */
 
-.col-6 {
-    flex: 0 0 66.66666%;
-    padding: 3%;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* About end*/
+/* Last results start */
 
 .last-results {
     display: flex;
@@ -148,7 +153,7 @@ body {
     padding: 2px;
 }
 
-.last-results-table tr:hover, .last-results-table tr:focus {
+.last-results-table tbody tr:hover, .last-results-table tbody tr:focus {
     background-color: rgba(255, 255, 255, 0.2);;
     
 }
@@ -162,3 +167,29 @@ body {
     padding: 10px;
     background-color: #05ccc9;
 }
+
+/* Last results end */
+
+/* Footer start */
+
+footer {
+    padding: 20px 3%;
+    background-color: #000;
+    color: #636363;
+    border-top: 1px solid #333333;
+}
+
+.social-list {
+    font-size: 24px;
+}
+
+.social-list i:hover {
+    color: #05ccc9;
+}
+
+.social-list i {
+    color: #333333;
+    margin-right: 10px;
+}
+
+/* Footer end */
