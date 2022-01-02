@@ -65,6 +65,23 @@ body {
     height:100%;
 }
 
+.title {
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.title::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 4px;
+    background: #05ccc9;
+}
+
 /* Slideshow start*/
 
 .slideshow {
@@ -99,25 +116,13 @@ body {
     margin: 20px 10%;
 }
 
-.about .title {
-    font-size: 36px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.about .title::before{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 160px;
-    height: 4px;
-    background: #05ccc9;
-}
-
 .col-3 {
     flex: 0 0 33.33333%;
+    padding: 3%;
+}
+
+.col-6 {
+    flex: 0 0 66.66666%;
     padding: 3%;
 }
 
@@ -126,3 +131,34 @@ body {
 }
 
 /* About end*/
+
+.last-results {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+}
+
+.last-results-table {
+    width: 100%;
+}
+
+.last-results-table td {
+    text-align: center;
+    padding: 2px;
+}
+
+.last-results-table tr:hover, .last-results-table tr:focus {
+    background-color: rgba(255, 255, 255, 0.2);;
+    
+}
+
+.last-results-table thead {
+    background-color: #bb0f0f;
+}
+
+.last-results-table caption {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #05ccc9;
+}
