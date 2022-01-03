@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Hamilton Fan Page | F1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/fontawesome.css">
         <link rel="stylesheet" href="style/fa-brands.css">
@@ -10,9 +12,15 @@
     <body>
         <header class="header">
             <nav>
-                <ul class="top-menu">
+                <input id="nav-check" type="checkbox">
+                <div id="nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="top-menu">                      
                     <li class="top-menu-item current"><a href="./index.html">Home</a></li>
-                    
                     <li class="top-menu-item has-child"><a class="" href="#">Races</a>
                         <ul class="">
                             <li class="top-menu-item"><a class="" href="#">Bahrain</a></li>
@@ -21,14 +29,14 @@
                             <li class="top-menu-item"><a class="" href="#">Monaco</a></li>
                             <li class="top-menu-item"><a class="" href="#">Azerbaijan</a></li>
                         </ul>
-                    </li>
-                    
+                    </li>               
                     <li class="top-menu-item"><a class="" href="#">News</a></li>
                     <li class="top-menu-item"><a class="" href="./fan-page.html">Fans</a></li>
                     <li class="top-menu-item"><a class="" href="#">Contacts</a></li>
                     <li class="top-menu-item"><a class="" href="#">Admin</a></li>
                 </ul>               
             </nav>
+        
             <div class="logo">
                 <a href="./index.html">
                     <img src="images/logo.png" />
@@ -43,10 +51,10 @@
         </div>
 
         <div class="about">
-            <div class="col-3 text-center p50">
+            <div class="col-3 text-center">
                 <span class="title">Biography - Career</p>
             </div>
-            <div class="col-3 p50">
+            <div class="col-3">
                 <p>Lewis Hamilton was born on 7 January 1985 in Stevenage, England. At the tender age of eight, Lewis sat in a kart for the first time and was immediately bitten by the racing bug. Mercedes-Benz soon recognised the British youngster's enormous talent, becoming one of his sponsors at the very start of his career.</p> 
                 <p>Not only did Lewis show incredible pace on the track, he also climbed the career ladder at an impressive rate. After he had blown the competition out of the water in every category of karting and won the McLaren Mercedes Champions of the Future series, McLaren Mercedes enrolled him on their Young Driver Programme in 1997. In 2001, he moved up into British Formula Renault, winning the title two years later.</p> 
                 <p>Lewis's winning streak continued unabated in the Formula 3 Euro Series. He was crowned junior champion whilst still in his second year and subsequently progressed to the GP2 Series with ART Grand Prix. Despite his rookie status, Lewis dominated the Championship - taking five victories on his way to the title. This success immediately led to his promotion to the very pinnacle of motor racing - Formula One.</p> 
@@ -54,7 +62,7 @@
                 <p>What had already been an extraordinary career reached new heights in 2008, with a first Formula One World Championship crown. At the time of his title victory, Lewis was 23 years, nine months and 26 days old - taking the accolade of youngest ever Formula One World Champion. It was undoubtedly one of the most dramatic title deciders in F1 history, with Lewis securing the Championship on the last lap of the final race in Brazil – after a late overtake for fifth place.</p> 
                 <p>Four years later, after six successful seasons with McLaren Mercedes, Lewis sought a new challenge - joining the works Mercedes team for the 2013 season. Lewis secured his first podium in a Mercedes Formula One car in only his second race with the team, at the Malaysian Grand Prix. A maiden victory followed eight races later in Hungary, helping Lewis to finish the season fourth overall in the Drivers’ standings.&nbsp;</p>     
             </div>
-            <div class="col-3 p50">
+            <div class="col-3">
                 <p>2014 heralded the dawn of a new era for Formula One - and a second World Drivers' Championship crown for Lewis, after taking 11 victories and 16 podiums along the way. The season-long battle with team-mate Nico Rosberg ended in dramatic fashion at the Abu Dhabi Grand Prix. The following season, Lewis put in a dominant title defence, which yielded 10 wins and 17 podiums in total – en route to his third Drivers’ crown, equalling the great Ayrton Senna and compatriot Sir Jackie Stewart.</p> 
                 <p>Lewis achieved a similar level of success in the 2016 season, scoring the most race wins (10) and most pole positions (12) of any driver. The Brit kept his World Championship hopes alive until the final weekend of the season in Abu Dhabi – but ultimately had to settle for the runner-up spot behind his team-mate Nico.</p> 
                 <p>For 2017, Lewis came under pressure from Sebastian Vettel, trailing the Ferrari driver for the first part of the season before a stunning run of form catapulted him into the Championship lead at the Italian Grand Prix. Lewis secured his fourth World Title in Mexico with two rounds to spare and ended the year with the most race wins (10) and pole positions (11) of any driver.</p> 
@@ -64,15 +72,18 @@
             </div>
         </div>
 
-        <div class="last-results">
-            <div class="col-6 p50">
+        <div class="last-results text-center">
+            <div class="col-3 mb20">
+                <span class="title">Last results</span>
+            </div>
+            <div class="col-6">
                 <table class="last-results-table">
                     <caption>2021 Season</caption>
                     <thead>
                         <tr>
                             <th>Date</th>
                             <th>Grand Prix</th>
-                            <th>Grid</th>
+                            <th class="hide-xs">Grid</th>
                             <th>Time</th>
                             <th>Finish</th>
                         </tr>
@@ -83,7 +94,7 @@
                         <td >
                         <span >Abu Dhabi</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:30:17.345</td>
                         <td>2nd</td>
                         </tr>
@@ -92,7 +103,7 @@
                         <td >
                         <span >Saudi Arabia</span>
                         </td>
-                        <td>1st</td>
+                        <td class="hide-xs">1st</td>
                         <td>2:06:15.118</td>
                         <td>1st</td>
                         </tr>
@@ -101,7 +112,7 @@
                         <td >
                         <span >Qatar</span>
                         </td>
-                        <td>1st</td>
+                        <td class="hide-xs">1st</td>
                         <td>1:24:28.471</td>
                         <td>1st</td>
                         </tr>
@@ -110,7 +121,7 @@
                         <td >
                         <span >Brazil</span>
                         </td>
-                        <td>10th</td>
+                        <td class="hide-xs">10th</td>
                         <td>1:32:22.851</td>
                         <td>1st</td>
                         </tr>
@@ -119,7 +130,7 @@
                         <td >
                         <span >Mexico</span>
                         </td>
-                        <td>2nd</td>
+                        <td  class="hide-xs">2nd</td>
                         <td>1:38:39.086</td>
                         <td>2nd</td>
                         </tr>
@@ -128,7 +139,7 @@
                         <td >
                         <span >United States</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:34:36.552</td>
                         <td>2nd</td>
                         </tr>
@@ -137,7 +148,7 @@
                         <td >
                         <span >Turkey</span>
                         </td>
-                        <td>11th</td>
+                        <td class="hide-xs">11th</td>
                         <td>1:31:04.103</td>
                         <td>5th</td>
                         </tr>
@@ -146,7 +157,7 @@
                         <td >
                         <span >Russia</span>
                         </td>
-                        <td>4th</td>
+                        <td class="hide-xs">4th</td>
                         <td>1:30:41.001</td>
                         <td>1st</td>
                         </tr>
@@ -155,7 +166,7 @@
                         <td >
                         <span >Italy</span>
                         </td>
-                        <td>4th</td>
+                        <td class="hide-xs">4th</td>
                         <td>1:21:54.365</td>
                         <td>RET</td>
                         </tr>
@@ -164,7 +175,7 @@
                         <td >
                         <span >Netherlands</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:30:05.395</td>
                         <td>2nd</td>
                         </tr>
@@ -173,7 +184,7 @@
                         <td >
                         <span >Belgium</span>
                         </td>
-                        <td>3rd</td>
+                        <td class="hide-xs">3rd</td>
                         <td>3:27.071</td>
                         <td>3rd</td>
                         </tr>
@@ -182,7 +193,7 @@
                         <td >
                         <span >Hungary</span>
                         </td>
-                        <td>1st</td>
+                        <td class="hide-xs">1st</td>
                         <td>2:04:43.199</td>
                         <td>2nd</td>
                         </tr>
@@ -191,7 +202,7 @@
                         <td >
                         <span >Great Britain</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:58:23.284</td>
                         <td>1st</td>
                         </tr>
@@ -200,7 +211,7 @@
                         <td >
                         <span >Austria</span>
                         </td>
-                        <td>4th</td>
+                        <td class="hide-xs">4th</td>
                         <td>1:23:54.543</td>
                         <td>4th</td>
                         </tr>
@@ -209,7 +220,7 @@
                         <td >
                         <span >Styria</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:22:18.925</td>
                         <td>2nd</td>
                         </tr>
@@ -218,7 +229,7 @@
                         <td >
                         <span >France</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:27:25.770</td>
                         <td>2nd</td>
                         </tr>
@@ -227,7 +238,7 @@
                         <td >
                         <span >Azerbaijan</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>2:13:36.410</td>
                         <td>15th</td>
                         </tr>
@@ -236,7 +247,7 @@
                         <td >
                         <span >Monaco</span>
                         </td>
-                        <td>7th</td>
+                        <td class="hide-xs">7th</td>
                         <td>1:38:56.820</td>
                         <td>7th</td>
                         </tr>
@@ -245,7 +256,7 @@
                         <td >
                         <span >Spain</span>
                         </td>
-                        <td>1st</td>
+                        <td class="hide-xs">1st</td>
                         <td>1:33:07.680</td>
                         <td>1st</td>
                         </tr>
@@ -254,7 +265,7 @@
                         <td >
                         <span >Portugal</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:34:31.421</td>
                         <td>1st</td>
                         </tr>
@@ -263,7 +274,7 @@
                         <td >
                         <span >Emilia-Romagna</span>
                         </td>
-                        <td>1st</td>
+                        <td class="hide-xs">1st</td>
                         <td>2:02:34.598</td>
                         <td>2nd</td>
                         </tr>
@@ -272,15 +283,12 @@
                         <td >
                         <span >Bahrain</span>
                         </td>
-                        <td>2nd</td>
+                        <td class="hide-xs">2nd</td>
                         <td>1:32:03.897</td>
                         <td>1st</td>
                         </tr>
                         </tbody>
                 </table>
-            </div>
-            <div class="col-3 p50">
-                <span class="title">Last results</span>
             </div>
         </div>
 

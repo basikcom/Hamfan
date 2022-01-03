@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Hamilton Fan Page | F1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/fontawesome.css">
         <link rel="stylesheet" href="style/fa-brands.css">
@@ -10,9 +12,15 @@
     <body>
         <header class="header">
             <nav>
-                <ul class="top-menu">
+                <input id="nav-check" type="checkbox">
+                <div id="nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="top-menu">                      
                     <li class="top-menu-item current"><a href="./index.html">Home</a></li>
-                    
                     <li class="top-menu-item has-child"><a class="" href="#">Races</a>
                         <ul class="">
                             <li class="top-menu-item"><a class="" href="#">Bahrain</a></li>
@@ -21,14 +29,14 @@
                             <li class="top-menu-item"><a class="" href="#">Monaco</a></li>
                             <li class="top-menu-item"><a class="" href="#">Azerbaijan</a></li>
                         </ul>
-                    </li>
-                    
+                    </li>               
                     <li class="top-menu-item"><a class="" href="#">News</a></li>
                     <li class="top-menu-item"><a class="" href="./fan-page.html">Fans</a></li>
                     <li class="top-menu-item"><a class="" href="#">Contacts</a></li>
                     <li class="top-menu-item"><a class="" href="#">Admin</a></li>
                 </ul>               
             </nav>
+        
             <div class="logo">
                 <a href="./index.html">
                     <img src="images/logo.png" />
