@@ -29,13 +29,8 @@ body {
     background: #05ccc9;
 }
 
-.col-3 {
-    flex: 0 0 33.33333%;
-    padding: 50px;
-}
-
-.col-6 {
-    flex: 0 0 66.66666%;
+.col {
+    flex: 1 1 0;
     padding: 50px;
 }
 
@@ -384,11 +379,9 @@ footer {
         flex-direction: column;
         text-align: justify;
     }
-    .col-3 {
-        padding: 5px;
-    }
-    .col-6 {
-        padding: 5px;
+    
+    .col {
+        padding: 10px;
     }
 
     .slideshow .image-container {
